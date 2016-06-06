@@ -1,0 +1,43 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: gainsboro;
+}
+@font-face {
+  font-family: "AvenirNextLT";
+  src: url("fonts/AvenirNextLTPro-Regular.otf");
+}
+header{
+  background-color: darkgrey;
+  position: static;
+  height: 8em;
+  width: 100%;
+  margin: 0px;
+  font-family: AvenirNextLT;
+  color: white;
+  font-size: 20px;
+  line-height: 10em;
+  max-height: 6em;
+}
+#header{
+  margin-left: 5%;
+}
+#photos{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  overflow: scroll;
+  width: 100vw;
+  height: 20vh;
+}
+footer {
+  background-color: darkgrey;
+  position: fixed;
+  bottom: 0;
+  height: 2em;
+  width: 100%;
+  text-align: center;
+}
