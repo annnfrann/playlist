@@ -30,11 +30,15 @@ aside{
   margin-left: 50%;
   float: left;
 }
-.placeholder1{
+.placeholder1 img{
+  /*add the word img after placeholder1 to make it target the divs*/
+
+
+
   background-color: black;
   opacity: 0.99;
-  width: 13em;
-  height: 13em;
+  max-width: 13em;
+  max-height: 13em;
   margin-left: 65%;
   margin-top: 20px;
 }
@@ -55,8 +59,10 @@ aside{
   margin-left: -3.5%;
 }
 .bottom{
-  background-color: yellow;
+  background-color: darkgrey;
+  color: white;
   margin-top: 15px;
+  margin-left: 26.5%;
   line-height: 2em;
   max-height: 2em;
 }
@@ -71,3 +77,9 @@ footer {
 #leftSide{
   float: left;
 }
+
+/*
+.placeholder1 img {
+  width: 100px;
+  height: 100px;
+}*/
