@@ -30,8 +30,8 @@ header{
   margin-right: auto;
   background-color: white;
   overflow: scroll;
-  overflow-y: hidden;
   overflow-x: scroll;
+  white-space: nowrap;
   width: 100vw;
   height: 22vh;
 }

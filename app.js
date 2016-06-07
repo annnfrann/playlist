@@ -6,6 +6,7 @@ $(document).ready(function(){
   $("#trackSelect").click(function(event){
     event.preventDefault()
     $.get("https://lit-fortress-6467.herokuapp.com/object", function(data, status){
+      console.log(data);
       var photo1 = data.results[getRandomIntInclusive(0,4)].cover_art;
       var photo2 = data.results[getRandomIntInclusive(0,4)].cover_art;
       var photo3 = data.results[getRandomIntInclusive(0,4)].cover_art;
@@ -26,5 +27,27 @@ $(document).ready(function(){
       $(album2).append(img2);
       $(album3).append(img3);
     })
+  })
+})
+$(document).ready(function(){
+  $("#adele").click(function(event){
+    event.preventDefault()
+    document.getElementById("albumInfo").innerHTML = "adele: 21"
+  })
+  $("#pinkFloyd").click(function(event){
+    event.preventDefault()
+    document.getElementById("albumInfo").innerHTML = "pink floyd: the division bell"
+  })
+  $("#police").click(function(event){
+    event.preventDefault()
+    document.getElementById("albumInfo").innerHTML = "the police: ghost in the machine"
+  })
+  $("#blackUhuru").click(function(event){
+    event.preventDefault()
+    document.getElementById("albumInfo").innerHTML = "black uhuru: red"
+  })
+  $("#michael").click(function(event){
+    event.preventDefault()
+    document.getElementById("albumInfo").innerHTML = "michael jackson: thriller"
   })
 })
