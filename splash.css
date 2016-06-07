@@ -31,16 +31,15 @@ aside{
   float: left;
 }
 .placeholder1 img{
-  /*add the word img after placeholder1 to make it target the divs*/
-
-
-
   background-color: black;
   opacity: 0.99;
   max-width: 13em;
   max-height: 13em;
   margin-left: 65%;
   margin-top: 20px;
+}
+.first{
+  margin-top: 1em;
 }
 .tracksButton{
   position: relative;
@@ -53,16 +52,16 @@ aside{
   font-family: AvenirNextLT;
 }
 .top{
-  margin-top: 37%;
+  margin-top: 57%;
   font-size: 45px;
   max-height: 50px;
-  margin-left: -3.5%;
+  margin-left: -7.5%;
 }
 .bottom{
   background-color: darkgrey;
   color: white;
   margin-top: 15px;
-  margin-left: 26.5%;
+  margin-left: 32.5%;
   line-height: 2em;
   max-height: 2em;
 }
@@ -76,10 +75,5 @@ footer {
 }
 #leftSide{
   float: left;
+  width: 50vw;
 }
-
-/*
-.placeholder1 img {
-  width: 100px;
-  height: 100px;
-}*/

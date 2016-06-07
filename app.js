@@ -29,25 +29,63 @@ $(document).ready(function(){
     })
   })
 })
+
 $(document).ready(function(){
   $("#adele").click(function(event){
     event.preventDefault()
-    document.getElementById("albumInfo").innerHTML = "adele: 21"
+    $.get("https://lit-fortress-6467.herokuapp.com/object", function(data, status){
+      var make = document.getElementById("albumInfo")
+      var adele = document.createElement("p")
+      adele.innerHTML = data.results[4].artist + ": " + data.results[4].title
+      $(make).append(adele)
+    })
   })
   $("#pinkFloyd").click(function(event){
     event.preventDefault()
-    document.getElementById("albumInfo").innerHTML = "pink floyd: the division bell"
+    $.get("https://lit-fortress-6467.herokuapp.com/object", function(data, status){
+      var make = document.getElementById("albumInfo")
+      var pinkFloyd = document.createElement("p")
+      pinkFloyd.innerHTML = data.results[2].artist + ": " + data.results[2].title
+      $(make).append(pinkFloyd)
+    })
   })
   $("#police").click(function(event){
     event.preventDefault()
-    document.getElementById("albumInfo").innerHTML = "the police: ghost in the machine"
+    $.get("https://lit-fortress-6467.herokuapp.com/object", function(data, status){
+      var make = document.getElementById("albumInfo")
+      var police = document.createElement("p")
+      police.innerHTML = data.results[0].artist + ": " + data.results[0].title
+      $(make).append(police)
+    })
   })
   $("#blackUhuru").click(function(event){
     event.preventDefault()
-    document.getElementById("albumInfo").innerHTML = "black uhuru: red"
+    $.get("https://lit-fortress-6467.herokuapp.com/object", function(data, status){
+      var make = document.getElementById("albumInfo")
+      var blackUhuru = document.createElement("p")
+      blackUhuru.innerHTML = data.results[1].artist + ": " + data.results[1].title
+      $(make).append(blackUhuru)
+    })
   })
   $("#michael").click(function(event){
     event.preventDefault()
-    document.getElementById("albumInfo").innerHTML = "michael jackson: thriller"
+    $.get("https://lit-fortress-6467.herokuapp.com/object", function(data, status){
+      var make = document.getElementById("albumInfo")
+      var michael = document.createElement("p")
+      michael.innerHTML = data.results[3].artist + ": " + data.results[3].title
+      $(make).append(michael)
+    })
+  })
+  $("#clearTracks").click(function(event){
+    event.preventDefault()
+    var make = document.getElementById("albumInfo")
+    make.innerHTML = " "
+  })
+  $("#submitBin").click(function(event){
+    event.preventDefault(
+    $.post("https://lit-fortress-6467.herokuapp.com/post", function(data, status){
+      console.log("Data: " + data + "\nStatus: " + status);
+    })
+    )
   })
 })
