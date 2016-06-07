@@ -29,17 +29,31 @@ aside{
   margin-bottom: 0px;
   margin-left: 50%;
   float: left;
+  z-index: -1;
 }
 .placeholder1 img{
   background-color: black;
   opacity: 0.99;
   max-width: 13em;
   max-height: 13em;
-  margin-left: 65%;
+  margin-left: 65.5%;
   margin-top: 20px;
+  z-index: 2;
 }
 .first{
-  margin-top: 1em;
+  position: absolute;
+  top: 0 auto;
+  margin-left: 53%;
+}
+.second{
+  position: absolute;
+  top: 275px;
+  margin-left: 53%;
+}
+.third{
+  position: absolute;
+  top: 500px;
+  margin-left: 53%;
 }
 .tracksButton{
   position: relative;
@@ -50,6 +64,10 @@ aside{
   text-align: center;
   border-radius: 7px;
   font-family: AvenirNextLT;
+}
+a{
+  color: white;
+  text-decoration: none;
 }
 .top{
   margin-top: 57%;
@@ -72,6 +90,7 @@ footer {
   height: 2em;
   width: 100%;
   text-align: center;
+  z-index: 3;
 }
 #leftSide{
   float: left;
